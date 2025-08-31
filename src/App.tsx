@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
-import ThemeButton from "./components/ThemeButton";
 import useTheme from "./store/ThemeStore";
+import NavBar from "./components/NavBar";
+import Hero from "./components/Hero";
+import ThemeButton from "./components/ThemeButton";
 
 const App: React.FC = () => {
   let { themes } = useTheme();
@@ -10,7 +12,15 @@ const App: React.FC = () => {
   }, [themes]);
   return (
     <>
+    <div className="px-3">
+      <div className="mb-[35px] mt-[8px]">
+       <NavBar />
+      </div>
+      <Hero />
       <ThemeButton />
+
+    </div>
+     
     </>
   );
 };
