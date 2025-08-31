@@ -1,5 +1,9 @@
 import React from "react";
+import { IoLogoGithub } from "react-icons/io";
 import { MdStarBorder } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaFacebookSquare } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 
 const Hero: React.FC = () => {
   return (
@@ -13,6 +17,18 @@ const Hero: React.FC = () => {
           I am a MERN Stack Developer with full-stack expertise, building
           scalable frontend + backend applications.
         </p>
+
+        <div>
+          <button className="border-2 text-[20px] rounded-full px-5 py-1 mt-4 bg-black text-white border-white">
+            Download My CV
+          </button>
+        </div>
+        <div className="flex gap-4 mt-[13px] items-center justify-center">
+          <FaFacebookSquare className="text-[25px] cursor-pointer" />
+          <IoLogoGithub className="text-[28px] cursor-pointer" />
+          <FaLinkedin className="text-[25px] cursor-pointer" />
+          <IoMdMail className="text-[28px] cursor-pointer" />
+        </div>
       </div>
     </>
   );
